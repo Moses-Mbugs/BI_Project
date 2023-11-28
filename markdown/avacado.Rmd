@@ -3,15 +3,15 @@ title: "Business Intelligence Lab Submission Markdown"
 author: "Moses Mbugua Muigai"
 date: "28th November 2023"
 output:
+  markdown:
+    wrap: 72
+  editor_options:
+    chunk_output_type: console
   github_document:
     toc: yes
     toc_depth: 4
     fig_width: 6
     fig_height: 4
-  editor_options:
-    chunk_output_type: console
-  markdown:
-    wrap: 72
 ---
 
 ```{r setup, include=FALSE}
@@ -37,6 +37,7 @@ Milestone 1: Exploratory Data Analysis
 library(readxl)
 avacado_price_prediction_dataset <- read_excel("data/avacado_price_prediction_dataset.xlsx")
 View(avacado_price_prediction_dataset)
+
 
 
 #Dimensions
